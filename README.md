@@ -1,2 +1,2 @@
 # X-Company-ML-Customer-Segmentation
-A project publised by BambooGuy appying ML into X Company's dataset for customer segmentation 
+A project publised by BambooGuy applying ML into X Company's dataset for customer segmentation 
