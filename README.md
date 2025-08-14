@@ -1,7 +1,7 @@
 # Customer Segmentation – X Securities Company
 
 ## Project Overview
-This project analyzes and segments customers of **X Securities Company** into clusters using **K-Means clustering**, then compares the results against the company’s existing **rule-based segmentation**.
+Hi guys, welcome to bambooguy's respritory. I interned at a securities company in Vietnam called "X" and had a chance to apply ML using the company's dataset. Thereby, I introduced to you my "Customer Segmentation using Machine Learning" during my time in this company. This project analyzes and segments customers of **X Securities Company** into clusters using **K-Means clustering**, then compares the results against the company’s existing **rule-based segmentation**.
 
 The aim is to:
 - Evaluate whether machine learning-based segmentation aligns with existing business rules.
