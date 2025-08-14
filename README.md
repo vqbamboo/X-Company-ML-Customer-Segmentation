@@ -21,3 +21,74 @@ The project uses **three main datasets**, each representing a different customer
    - Customers who have **opened a securities account** but **never made a transaction**.
 
 Each dataset is stored in a separate folder:
+📁 active/
+📁 inactive/
+📁 nonactive/
+
+
+---
+
+## 🛠 Methodology
+For each dataset (`active`, `inactive`, `nonactive`):
+
+1. **Data Preprocessing**
+   - Clean missing values.
+   - Handle outliers in transaction amounts and frequency.
+   - Standardize numerical features for K-Means.
+
+2. **Feature Engineering**
+   - Calculate key behavioral metrics:
+     - **Recency (R)** – Days since last transaction.
+     - **Frequency (F)** – Number of transactions over the period.
+     - **Monetary (M)** – Total transaction value.
+     - **NAV (N)** – Current Net Asset Value.
+   - Transform skewed variables (e.g., log transformation).
+
+3. **K-Means Clustering**
+   - Determine optimal **k** using the **Elbow method** and **Silhouette score**.
+   - Fit K-Means on standardized features.
+   - Assign cluster labels to customers.
+
+4. **Cluster Profiling**
+   - Summarize R, F, M, N for each cluster.
+   - Describe behavioral traits of each segment.
+
+5. **Comparison with Rule-Based Segmentation**
+   - Map clusters to the company’s existing segmentation categories.
+   - Identify mismatches where ML clustering suggests reclassification.
+
+---
+
+## 📊 Example Output
+For each dataset, the analysis produces:
+- **Cluster distribution charts**.
+- **RFMN heatmaps**.
+- **Mapping tables** showing differences between ML-based and rule-based segments.
+- **Business recommendations** for each segment.
+
+---
+
+## 📈 Tools & Technologies
+- **Programming Language**: Python  
+- **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn  
+- **Environment**: Jupyter Notebook
+
+---
+
+## 📂 Repository Structure
+├── active/
+│ ├── data/ # Raw & processed data
+│ ├── notebooks/ # Jupyter Notebooks for Active customers
+│ └── results/ # Clustering results, charts, and reports
+│
+├── inactive/
+│ ├── data/
+│ ├── notebooks/
+│ └── results/
+│
+├── nonactive/
+│ ├── data/
+│ ├── notebooks/
+│ └── results/
+│
+└── README.md
