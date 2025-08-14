@@ -1,6 +1,6 @@
 # Customer Segmentation – X Securities Company
 
-## 📌 Project Overview
+## Project Overview
 This project analyzes and segments customers of **X Securities Company** into clusters using **K-Means clustering**, then compares the results against the company’s existing **rule-based segmentation**.
 
 The aim is to:
@@ -10,7 +10,7 @@ The aim is to:
 
 ---
 
-## 🗂 Data Overview
+## Data Overview
 The project uses **three main datasets**, each representing a different customer activity status:
 
 1. **Active**  
@@ -28,7 +28,7 @@ Each dataset is stored in a separate folder:
 
 ---
 
-## 🛠 Methodology
+## Methodology
 For each dataset (`active`, `inactive`, `nonactive`):
 
 1. **Data Preprocessing**
@@ -59,7 +59,7 @@ For each dataset (`active`, `inactive`, `nonactive`):
 
 ---
 
-## 📊 Example Output
+## Example Output
 For each dataset, the analysis produces:
 - **Cluster distribution charts**.
 - **RFMN heatmaps**.
@@ -68,27 +68,10 @@ For each dataset, the analysis produces:
 
 ---
 
-## 📈 Tools & Technologies
+## Tools & Technologies
 - **Programming Language**: Python  
 - **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn  
 - **Environment**: Jupyter Notebook
 
 ---
 
-## 📂 Repository Structure
-├── active/
-│ ├── data/ # Raw & processed data
-│ ├── notebooks/ # Jupyter Notebooks for Active customers
-│ └── results/ # Clustering results, charts, and reports
-│
-├── inactive/
-│ ├── data/
-│ ├── notebooks/
-│ └── results/
-│
-├── nonactive/
-│ ├── data/
-│ ├── notebooks/
-│ └── results/
-│
-└── README.md
